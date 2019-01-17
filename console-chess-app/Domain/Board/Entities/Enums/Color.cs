@@ -1,5 +1,5 @@
 ﻿namespace Domain.Board.Entities.Enums {
-	enum Color : int{
+	public enum Color : int{
 
 		Branca = 0,
 		Preta = 1,

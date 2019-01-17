@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Board\Entities\Board.cs" />
     <Compile Include="Board\Entities\Enums\Color.cs" />
+    <Compile Include="Board\Entities\Piece.cs" />
     <Compile Include="Board\Entities\Position.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
