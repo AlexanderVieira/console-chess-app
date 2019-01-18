@@ -40,16 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Board\Entities\Board.cs" />
+    <Compile Include="Board\Entities\MyBoard.cs" />
     <Compile Include="Board\Entities\Enums\Color.cs" />
     <Compile Include="Board\Entities\Piece.cs" />
     <Compile Include="Board\Entities\Position.cs" />
+    <Compile Include="Chess\King.cs" />
+    <Compile Include="Chess\Tower.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Board\Exceptions\" />
-    <Folder Include="Chess\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

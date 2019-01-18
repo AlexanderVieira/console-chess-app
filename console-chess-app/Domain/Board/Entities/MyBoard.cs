@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Domain.Board.Entities {
-	public class Board {
+﻿namespace Domain.Board.Entities {
+	public class MyBoard {
 		public int NumLines { get; set; }
 		public int NumColumns { get; set; }
 		private Piece[,] pieces;
 
-		public Board(int numLines, int numColumns) {
+		public MyBoard(int numLines, int numColumns) {
 			NumLines = numLines;
 			NumColumns = numColumns;
 			pieces = new Piece[numLines, numColumns];
@@ -22,6 +16,11 @@ namespace Domain.Board.Entities {
 
 		public Piece Piece(Position pos) {
 			return pieces[pos.Line, pos.Column];
+		}
+
+		public void PutPiece(Piece piece, Position position) {
+			pieces[position.Line, position.Column] = piece;
+			piece.Position = position;
 		}
 	}
 }
